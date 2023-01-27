@@ -5,26 +5,20 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
 import com.wa7a.calculator.databinding.ActivityMainBinding
 import kotlin.random.Random
 
-private lateinit var binding: ActivityMainBinding
-
-enum class Operation {
-    Plus,
-    Minus,
-    Mul,
-    Div,
-    Mode
-}
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     var firstNumber: Double = 0.0
     var currentOp: Operation? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
         addCallBack()
         binding.textNumber.setTextColor(Color.parseColor("#${randomCreater()}"))
     }
@@ -58,7 +52,7 @@ class MainActivity : AppCompatActivity() {
             binding.textNumber.text =
                 binding.textNumber.text.subSequence(0, binding.textNumber.text.length - 1)
         }
-        binding.operationMode.setOnClickListener{
+        binding.operationMode.setOnClickListener {
             prepareOperation(Operation.Mode)
         }
 
