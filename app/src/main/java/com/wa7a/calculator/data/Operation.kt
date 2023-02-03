@@ -1,4 +1,4 @@
-package com.wa7a.calculator
+package com.wa7a.calculator.data
 
 enum class Operation {
     Plus,

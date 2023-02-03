@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="padding_large">24dp</dimen>
-    <dimen name="text_normal">@dimen/_16ssp</dimen>
-    <dimen name="text_giant">@dimen/_36ssp</dimen>
-    <dimen name="text_button">@dimen/_18ssp</dimen>
-    <dimen name="margin_normal">16dp</dimen>
-    <dimen name="radius_large">36dp</dimen>
-    <dimen name="button_width_height">@dimen/_32sdp</dimen>
-    <dimen name="text_margin">86dp</dimen>
+    <dimen name="button_normal">@dimen/_38sdp</dimen>
+    <dimen name="button_wide">@dimen/_110sdp</dimen>
+    <dimen name="button_margin_normal">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+    <dimen name="corner_radius_large">160dp</dimen>
+    <dimen name="card_elevation_normal">8dp</dimen>
+    <dimen name="text_size_normal">36sp</dimen>
+    <dimen name="length_size_zero">0dp</dimen>
+    <dimen name="height_large">@dimen/_32sdp</dimen>
 </resources>
