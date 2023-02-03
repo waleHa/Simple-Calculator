@@ -1,10 +1,11 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Theme.Calculator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Calculator" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/brand</item>
         <item name="colorPrimaryVariant">@color/brand</item>
         <item name="colorOnPrimary">@color/white</item>
+
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/background</item>
         <!-- Customize your theme here. -->
@@ -28,4 +29,10 @@
     </style>
 <!--    <item name="android:background">@drawable/circle_button</item>-->
     <color name="black">#000000</color>
+
+    <style name="calculator_button.main">
+        <item name="android:background">@drawable/rectangle_button</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
 </resources>

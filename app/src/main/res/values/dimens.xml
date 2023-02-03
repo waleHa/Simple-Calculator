@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="padding_large">24dp</dimen>
-    <dimen name="text_normal">16sp</dimen>
-    <dimen name="text_giant">36sp</dimen>
-    <dimen name="text_button">18sp</dimen>
+    <dimen name="text_normal">@dimen/_16ssp</dimen>
+    <dimen name="text_giant">@dimen/_36ssp</dimen>
+    <dimen name="text_button">@dimen/_18ssp</dimen>
     <dimen name="margin_normal">16dp</dimen>
     <dimen name="radius_large">36dp</dimen>
-    <dimen name="button_width_height">48dp</dimen>
+    <dimen name="button_width_height">@dimen/_32sdp</dimen>
+    <dimen name="text_margin">86dp</dimen>
 </resources>
